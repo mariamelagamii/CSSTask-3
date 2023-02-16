@@ -1,0 +1,36 @@
+:root {
+    --mainColor: #009688;
+}
+h1{
+    position: relative;
+    width: 150px;
+    margin: 20px auto;
+    background-color: var(--mainColor);
+    color: white;
+    padding: 20px 0px;
+    text-align: center;
+    font-size: 40px;
+
+}
+h1::before {
+    content: "";
+    position: absolute;
+    left: -44px;
+    top: 0;
+    width: 14.5%;
+    height: 100%;
+    background-color: var(--mainColor);
+   transform: skewX(20deg);
+   z-index: -1;
+}
+h1::after {
+    content: "";
+    position: absolute;
+    left: -16px;
+    top: 0px;
+    width: 22%;
+    height: 100%;
+    background-color: var(--mainColor);
+   transform: skewX(20deg);
+   z-index: -1;
+}

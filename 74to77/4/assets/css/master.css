@@ -1,0 +1,108 @@
+ /*two animitions*/
+/*EL by grid*/
+:root{
+    --mainColor: #323234;
+    --animColor: #FEA604;
+} 
+* {
+    box-sizing: border-box;
+}
+.EL {
+    width: 400px;
+    height: 350px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "top left"
+        "bottom left";
+    column-gap: 20px;
+}
+.E-top, .E-bottom, .l{
+    border-left: 50px solid var(--mainColor);
+}
+.E-top {
+    border-top: 50px solid var(--mainColor);
+    border-bottom: 25px solid var(--mainColor);
+    grid-area: top;
+}
+
+.E-bottom {
+    border-bottom: 50px solid var(--mainColor);
+    border-top: 25px solid var(--mainColor);
+    grid-area: bottom;
+}
+.l {
+    border-bottom: 50px solid var(--mainColor);
+    grid-area: left;
+}
+.first, .second {
+    width: 30px;
+    height: 30px;
+    background-color: var(--animColor);
+}
+.first {
+    transform: translate(100px, 310px);
+    animation: first 6s linear infinite;
+    opacity: 0;
+}
+@keyframes first {
+
+    25% {
+        opacity: 1;
+        transform: translate(100px, 310px);
+    }
+    35% {
+        transform: translate(-40px, 310px);
+        opacity: 1;
+    }
+    45% {
+        transform: translate(-40px, 9px);
+        opacity: 1;
+    }
+    55% {
+        transform: translate(-40px, 9px);
+        opacity: 0;
+    }
+
+}
+.second {
+    transform: translate(100px, -40px);
+    animation: second 6s linear infinite;
+}
+@keyframes second {
+    55% {
+        transform: translate(100px, -40px);
+    }
+    60% {
+        transform: translate(-40px, -40px);
+    }
+    65% {
+        transform: translate(-40px, 110px);
+    }
+    70% {
+        transform: translate(100px, 110px);
+    }
+    75% {
+        transform: translate(-40px, 110px);
+    }
+    80% {
+        transform: translate(-40px, 260px);
+    }
+    85% {
+        transform: translate(110px, 260px);
+    }
+    90% {
+        transform: translate(-40px, 260px);
+    }
+    95% {
+        transform: translate(-40px, -40px);
+    }
+    100% {
+        transform: translate(100px, -40px);
+    }
+}
+
+
+

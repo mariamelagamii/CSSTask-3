@@ -1,0 +1,7 @@
+* {
+    margin: 0;
+}
+
+div:nth-child(2) div {
+    color: red;
+}

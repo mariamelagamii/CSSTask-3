@@ -1,0 +1,10 @@
+* {
+    margin: 0;
+}
+h3 {
+    font-size: medium;
+    font-weight: normal;
+}
+ h3 + h3 +div{
+    color: red;
+}

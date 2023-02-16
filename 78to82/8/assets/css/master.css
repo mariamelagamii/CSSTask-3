@@ -1,0 +1,10 @@
+* {
+    margin: 0;
+}
+h3 {
+    font-size: medium;
+    font-weight: normal;
+}
+div :not(:first-child):not(:last-child):not(h3){
+    color: red;
+}

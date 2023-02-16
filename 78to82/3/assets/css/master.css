@@ -1,0 +1,7 @@
+* {
+    margin: 0;
+}
+
+.parent .baby:only-child{
+    color: red;
+}
